@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>today's date</title>
+    </head>
+    <body>
+        <script>
+            let dateObj=new Date();
+            let month=String(dateObj.getMonth()+1).padStart(2,'0');
+            let day=String(dateObj.getDate()).padStart(2,'0');
+            let year=String(dateObj.getFullYear()).padStart(2,'0');
+
+            let output=day+'/'+month+'/'+year;
+            console.log(output);
+            document.write(output);
+        </script>
+    </body>
+</html>

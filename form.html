@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <script>
+            function display(){
+                var a=document.y.a.value;
+                var b=document.y.b.value;
+                var c=document.y.c.value;
+                var gender=document.y.gender.value;
+                var d=document.y.d.value;
+                document.y.data.value="Name:" + a +"\n"+
+                                      "Email-Id:" + b +"\n"+
+                                      "Mob.No:" + c +"\n"+
+                                      "Gender:" + gender +"\n"+
+                                      "Color:" + d ;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="y" method="post">
+            <table border="1px">
+                <tr>
+                    <td><label for="a">Name:</label></td>
+                    <td><input type="text" name="a" id="a" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="b">Email-Id:</label></td>
+                    <td><input type="text" name="b" id="b" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="c">Mob No.:</label></td>
+                    <td><input type="text" name="c" id="c" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="Gender">Gender:</label></td>
+                    <td><label for="male">Male:</label>
+                        <input type="radio" name="gender" id="male" value="male"><br>
+                        <label for="male">Female:</label>
+                        <input type="radio" name="gender" id="Female" value="Female"><br>
+                        <label for="male">Other:</label>
+                        <input type="radio" name="gender" id="Other" value="Other">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="d">Favourit color:</label></td>
+                    <td><input type="text" name="d" id="d" value=""></td>
+                </tr>
+            </table>
+            <button type="button" onclick="display();" value="submit" name="button">submit</button><br>
+            <label for="data">Your Entered Data:</label>
+            <textarea name="data" type="text" rows="8" cols="80"></textarea>
+
+        </form>
+    </body>
+</html>
